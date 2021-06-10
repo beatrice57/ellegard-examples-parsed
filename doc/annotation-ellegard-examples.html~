@@ -17,10 +17,12 @@ Gothenburg. Stockholm: Almqvist and Wiksell.
 
 <h4>One-to-one correspondence between Elleg&aring;rd examples and parsed tokens</h4>
 
-When entering Elleg&aring;rd's examples, Taylor naturally respected
-conventions concerning the punctuation of sentence boundaries, which are
-not necessarily consistent with
-the <a href="https://www.ling.upenn.edu/ppche/ppche-release-2016/annotation"
+In the file produced by Taylor, each Elleg&aring;rd example stood in
+one-to-one correspondence with a coding string.  In entering
+Elleg&aring;rd's examples, Taylor naturally respected orthographical
+conventions concerning sentence-final punctuation.  However, these
+conventions are not always consistent with the
+<a href="https://www.ling.upenn.edu/ppche/ppche-release-2016/annotation"
 target="_new">guidelines for the annotation of historical English</a>
 concerning sentence tokenization.  In order to maintain one-to-one
 correspondence between Elleg&aring;rd examples and parsed tokens, the
@@ -46,23 +48,23 @@ example:
 
 <blockquote>
 <pre>
-( (ROOT (CP-QUE-MAT (SRC text-id:text-code:year:page-and-line)  	   &larr; copy 1 focuses on DO variable in higher CP
+( (ROOT (CP-QUE-MAT (coding text-id:text-code:year:page-and-line)	&larr; copy 1 focuses on DO variable in higher CP
         (IP-SUB (DOD did)
                 (NP-SBJ (PRO He))
 			    (VBD complain)
 			    (CP-THT (C that)
-                                    (ip-SUB (NP-SBJ (PRO they))            &larr; lower ip not in focus
+				    (ip-SUB (NP-SBJ (PRO they))         &larr; lower ip not in focus
 					    (VBD worked)
 					    (NEG not)
 					    (ADVP (ADV carefully))))))
 	(. ?))
   (ID id-for-copy-1))
 
-( (ROOT (cp-QUE-MAT (ip-SUB (DOD did) 			                                   &larr; higher cp/ip not in focus
+( (ROOT (cp-QUE-MAT (ip-SUB (DOD did) 			                                      &larr; higher cp/ip not in focus
 			    (NP-SBJ (PRO He))
 			    (VBD complain)
 			    (CP-THT (C that)
-				    (IP-SUB (SRC text-id:text-code:year:page-and-line)     &larr; copy 2 focuses on DO variable in lower IP
+				    (IP-SUB (coding text-id:text-code:year:page-and-line)     &larr; copy 2 focuses on DO variable in lower IP
                                             (NP-SBJ (PRO they))
 					    (VBD worked)
 					    (NEG not)
@@ -75,7 +77,7 @@ example:
 <h4>Source information</h4>
 
 <p>
-As just shown in the example, source information is associated with the
+As shown in the example above, source information is associated with the
 relevant CP or IP in a clause-initial SRC node.
 
 <ul>
@@ -124,13 +126,13 @@ following exceptions:
 
 </ul>
 
-<a name="partial-lemmatization">
-<h4>Partial lemmatization</h4>
+<a name="lemmatization">
+<h4>Lemmatization</h4>
 
 As is well known, Elleg&aring;rd identified a class of verbs that behave
 conservatively with respect to DO support, which he called the KNOW
-class.  The main members are given on p. 199 of the thesis, and in the
-appendix, he adds two more.
+class.  The main members are given on p. 199 of the thesis, and in
+the appendix, he adds two more.
 
 <ul>
 <li>boot
