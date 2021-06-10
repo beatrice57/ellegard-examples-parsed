@@ -10,8 +10,8 @@ This repository contains
 Citation
 ========
 
-Santorini, Beatrice.  2021.  Parsed examples from Ellegard 1953.
-<https://github.com/beatrice57/parsed-ellegard-examples>
+Santorini, Beatrice.  2021.  Examples from Ellegard 1953, parsed.
+<https://github.com/beatrice57/ellegard-examples-parsed>
 
 License
 =======
