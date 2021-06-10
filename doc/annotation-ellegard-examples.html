@@ -1,0 +1,162 @@
+<h3>Parsed examples from Elleg&aring;rd 1953</h3>
+
+<h4>Background</h4>
+
+In his thesis on the rise of DO support in the history of English,
+Elleg&aring;rd 1953 published a list of the textual sources for the
+examples that the figures and tables in the thesis were based on.  These
+examples were located and entered as raw text by Ann Taylor (ADT) and
+later parsed by Beatrice Santorini (BES).  The resulting file consists
+of roughly 325,000 words (excluding punctuation and metadata).  Details
+concerning the data are available in Elleg&aring;rd's thesis.
+
+<p>
+Elleg&aring;rd, Alvar.  1953.  The auxiliary do: The establishment and
+regulation of its use in English.  Doctoral dissertation, University of
+Gothenburg. Stockholm: Almqvist and Wiksell.
+
+<h4>One-to-one correspondence between Elleg&aring;rd examples and parsed tokens</h4>
+
+In the file produced by Taylor, each Elleg&aring;rd example stood in
+one-to-one correspondence with a coding string.  In entering
+Elleg&aring;rd's examples, Taylor naturally respected orthographical
+conventions concerning sentence-final punctuation.  However, these
+conventions are not always consistent with the
+<a href="https://www.ling.upenn.edu/ppche/ppche-release-2016/annotation"
+target="_new">guidelines for the annotation of historical English</a>
+concerning sentence tokenization.  In order to maintain one-to-one
+correspondence between Elleg&aring;rd examples and parsed tokens, the
+annotation guidelines are therefore relaxed in the following way.  Each
+Elleg&aring;rd example in the parsed file is dominated by a node labeled
+ROOT, which may dominate more than one matrix clause (IP-MAT,
+CP-QUE-MAT, etc.) as needed, potentialy violating the syntactic
+annotation guidelines.  Below this ROOT level, the guidelines apply in
+full force.
+
+<h4>CP/IP vs. cp/ip</h4>
+
+<p>
+Independently of the tokenization issue, parsing the examples of course
+often breaks up syntactically complex examples into matrix and
+subordinate clauses.  In cases where a single textual witness contains
+multiple instances of the DO variable, the witness is repeated (just as
+it is in Elleg&aring;rd's appendix).  In order to maintain the
+one-to-one-correspondence between Elleg&aring;rd's examples and the
+parsed examples, we use lowercase clausal labels (cp, ip) for clauses in
+the example that are not associated with Ellegard's current entry.  For
+example:
+
+<blockquote>
+<pre>
+( (ROOT (CP-QUE-MAT (coding text-id:text-code:year:page-and-line)	&larr; copy 1 focuses on DO variable in higher CP
+        (IP-SUB (DOD did)
+                (NP-SBJ (PRO He))
+			    (VBD complain)
+			    (CP-THT (C that)
+				    (ip-SUB (NP-SBJ (PRO they))         &larr; lower ip not in focus
+					    (VBD worked)
+					    (NEG not)
+					    (ADVP (ADV carefully))))))
+	(. ?))
+  (ID id-for-copy-1))
+
+( (ROOT (cp-QUE-MAT (ip-SUB (DOD did) 			                                      &larr; higher cp/ip not in focus
+			    (NP-SBJ (PRO He))
+			    (VBD complain)
+			    (CP-THT (C that)
+				    (IP-SUB (coding text-id:text-code:year:page-and-line)     &larr; copy 2 focuses on DO variable in lower IP
+                                            (NP-SBJ (PRO they))
+					    (VBD worked)
+					    (NEG not)
+					    (ADVP (ADV carefully))))))
+	(. ?))
+  (ID different-id-for-copy-2))
+</pre>
+</blockquote>
+
+<h4>Source information</h4>
+
+<p>
+As shown in the example above, source information is associated with the
+relevant CP or IP in a clause-initial SRC node.
+
+<ul>
+<li>column 1: Ellegard's text identifier
+<li>column 2: Ellegard's text code
+<li>column 3: year
+<li>column 4: page and line number, along with supplementary information where called for:
+    <ul>
+    <li>duplicate - Elleg&aring;rd erroneously repeats a clause under
+        two separate categories (for instance, a negative declarative
+        might also be listed as a negative imperative).  The erroneous
+        token is flagged as duplicate.
+    <li>ppcme2, ppceme, pceec - the example also appears in a subcorpus
+        of the the <a href="https://www.ling.upenn.edu/hist-corpora/
+        target="_new"">Penn Parsed Corpora of Historical English</a>.
+    <!--<li>ell - I have forgotten what this stands for, but it does not seem
+        important!-->
+    </ul>
+</ul>
+
+<a name="annotation">
+<h4>Annotation guidelines</h4>
+
+In general, the database is parsed in accordance with
+the <a href="https://www.ling.upenn.edu/ppche/ppche-release-2016/annotation"
+target="_new">annotation manual for historical English</a>, with the
+following exceptions:
+
+<ul>
+<li>For the reasons just discussed, the guidelines for sentence
+    tokenization have been relaxed because of the character of the data
+    as a collection of examples rather than a corpus of running text.
+<li>The guidelines have been slightly simplified in the following
+    respects, none of which affect the annotation of basic clause
+    structure.
+<ul>
+<li>Participles functioning as adjectives (whether prenominal or
+    predicative) are tagged as ADJ.
+<li>For uniformity, traces of extraposed degree complements are treated
+    in the same way as their counterparts in comparative complements.
+<li>"Plus tags" (like ADJ+N) are generally replaced by the corresponding
+    simple tag for the head of the word.  In some cases ("thereon" and
+    the like), this is not easily possible, and plus tags (ADV+P)
+    continue to be used.
+</ul>
+
+</ul>
+
+<a name="lemmatization">
+<h4>Lemmatization</h4>
+
+As is well known, Elleg&aring;rd identified a class of verbs that behave
+conservatively with respect to DO support, which he called the KNOW
+class.  The main members are given on p. 199 of the thesis, and in
+the appendix, he adds two more.
+
+<ul>
+<li>boot
+<li>care
+<li>do (main verb, from appendix)
+<li>doubt
+<li>dread (from appendix)
+<li>fear
+<li>know
+<li>list
+<li>mistake
+<li>skill
+<li>trow
+<li>wot (never with DO support)
+</ul>
+
+<p>
+For convenience, these verbs have been lemmatized in clauses
+instantiating the DO variable by appending the lemma to the verb form
+with an equal sign (as in IcePaHC).  For example:
+
+<ul>
+<li>Careth=care
+<li>doughte=doubt
+<li>lik'st=like
+</ul>
+
