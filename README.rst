@@ -1,7 +1,7 @@
 Parsed Ellegard examples
 =========================
 
-This repository containss
+This repository contains
 
 - a parsed version of the examples underlying Ellegard's 1953
   thesis on the rise of DO support in the history of English
