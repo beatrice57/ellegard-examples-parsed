@@ -1,5 +1,5 @@
 Parsed Ellegard examples
-=========================
+========================
 
 This repository contains
 
@@ -21,10 +21,9 @@ Commons License Attribution-NonCommercial-ShareAlike 4.0 International
 CC BY-NC-SA 4.0 (<https://creativecommons.org/licenses/by-nc-sa/4.0>).
 
 Contact
-========
+=======
 
-Beatrice Santorini (beatrice AT sas DOT upenn DOT edu, beatrice DOT
-santorini AT gmail DOT com)
+Beatrice Santorini (beatrice DOT santorini AT gmail DOT com)
 
 Acknowledgments
 ===============
