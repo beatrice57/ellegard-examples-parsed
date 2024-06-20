@@ -1,4 +1,4 @@
-Parsed Ellegard examples
+Ellegard examples parsed
 ========================
 
 This repository contains
