@@ -11,14 +11,14 @@ Citation
 ========
 
 Santorini, Beatrice.  2021.  Examples from Ellegard 1953, parsed.
-<https://github.com/beatrice57/ellegard-examples-parsed>
+https://github.com/beatrice57/ellegard-examples-parsed
 
 License
 =======
 
 The files in this repository are distributed under Creative
 Commons License Attribution-NonCommercial-ShareAlike 4.0 International
-CC BY-NC-SA 4.0 (<https://creativecommons.org/licenses/by-nc-sa/4.0>).
+CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0).
 
 Contact
 =======
